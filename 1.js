@@ -3,7 +3,7 @@ const arr = [   { name: "Milk", price: 20, amount: 15 },
                 { name: "Tea", price: 10, amount: 14 }      ] 
 
 const totalGoods = function (goodsArray) {
-    return arr.map((item) => (
+    return goodsArray.map((item) => (
         {
         name: item.name,
         total: item.price * item.amount
