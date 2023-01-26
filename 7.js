@@ -1,17 +1,23 @@
+/*
+Написать функцию, принимающую массив целых чисел и целое число число N. В самой функции вычислить sum, прибавляя к нему каждый раз элементы массива по порядку до тех пор, пока sum не превысит заданное число N. Полученное значение функция должна вернуть.
+
+Input: [5,10, 15, 20, 10, 25, 20, 30, 15], 55
+
+Output: 60
+*/
 const numbers = [5,10, 15, 20, 10, 25, 20, 30, 15];
 
-const sumBefore = function (array, n) {
-    let sum = 0;
+const sumBefore = (array, limit) => {//sum это глагол сокращенный 
+  let sum = 0;
 
-    array.forEach(element => {
-        if (sum < n) {
-            sum = sum + element;
-        }
+  array.forEach(element => {
+    if (sum < limit) {
+        sum = sum + element;
+    }
+  });
 
-    });
 
-
-    return sum;
+  return sum;
 }
 
 console.log(sumBefore(numbers, 55));
