@@ -1,10 +1,13 @@
+/*
+Написать функцию, принимающую массив строк и выводящих их на экран, используя цикл while. Элементы из массива извлекать с помощью оператора .pop()
+ */ 
+
 const cars = ["Volvo", "BMW", "Ford", "Mazda", "Zhiguli"];
 
-const popArray = function (array) {
-    while(array.length > 0) {
-        console.log(array.pop());
-    };
+const printDeliteArray = (array) => {
+  while (array.length > 0) {
+    alert(array.pop());
+  };
 }
 
 popArray(cars);
-console.log(cars);
