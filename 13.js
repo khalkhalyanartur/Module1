@@ -20,7 +20,7 @@ const printTypes = (array) => {
         alert('Это число');
         break;
       case "string":
-        console.log('Это строка');
+        alert('Это строка');
         break;
       case "boolean":
         alert('Это булево значение');
