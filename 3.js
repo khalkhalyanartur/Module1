@@ -4,10 +4,10 @@
 
 const cars = ["Volvo", "BMW", "Ford", "Mazda", "Zhiguli"];
 
-const printDeliteArray = (array) => {
+const alertArray = (array) => {
   while (array.length > 0) {
     alert(array.pop());
   };
 }
 
-popArray(cars);
+alertArray(cars);
