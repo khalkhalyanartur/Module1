@@ -1,48 +1,35 @@
 /*
 Имеется, массив заполненный значениями разных типов данных. Написать функцию, принимающую этот массив и выводящую на экран в для каждого элемента “Это строка” если выражение строкового типа, “Это число” для чисел и “Это булево значение” для значений типа boolean. Для остальных значений вывести “Неизвестное значение”.
-
-
-
 Input: [“str”, 123, “123”, true, null, {}, 2]
-
-
-
 Output:
-
 Это строка
-
 Это число
-
 Это строка
-
 Это булево значение
-
 Неизвестное значение
-
 Неизвестное значение
-
 Это строка
 */
 
 const values = ["str", 123, "123", true, null, {}, 2];
 
-const prinTypes = (array) => {
+const printTypes = (array) => {
   array.forEach(element => {
     switch (typeof element) {
       case "number":
-        console.log('Это число');
+        alert('Это число');
         break;
       case "string":
         console.log('Это строка');
         break;
       case "boolean":
-        console.log('Это булево значение');
+        alert('Это булево значение');
         break;
       default:
-        console.log('Неизвестное значение');
+        alert('Неизвестное значение');
         break;
     }
   });
 }
 
-prinTypes(values);
+printTypes(values);
