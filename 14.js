@@ -5,22 +5,21 @@
 const calculation = (a,b, operator) => {
   switch (operator) {
     case "+":
-      console.log(`${a} + ${b} = ${a + b}`);
+      alert(`${a} + ${b} = ${a + b}`);
       break;
     case "-":
-      console.log(`${a} - ${b} = ${a - b}`);
+      alert(`${a} - ${b} = ${a - b}`);
       break;
     case "/":
-      console.log(`${a} / ${b} = ${a / b}`);
+      alert(`${a} / ${b} = ${a / b}`);
       break;
     case "*":
-      console.log(`${a} * ${b} = ${a * b}`);
+      alert(`${a} * ${b} = ${a * b}`);
       break;
     default:
-      console.log('Неизвестное действие');
+      alert('Неизвестное действие');
       break;
   }
-
 }
 
 calculation(5,5,"/");
