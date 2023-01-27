@@ -7,7 +7,7 @@ Output: 60
 */
 const numbers = [5,10, 15, 20, 10, 25, 20, 30, 15];
 
-const sumBefore = (array, limit) => {//sum это глагол сокращенный 
+const sumMax = (array, limit) => {//sum это глагол сокращенный 
   let sum = 0;
 
   array.forEach(element => {
@@ -16,8 +16,6 @@ const sumBefore = (array, limit) => {//sum это глагол сокращен�
     }
   });
 
-
   return sum;
 }
-
-console.log(sumBefore(numbers, 55));
+console.log(sumMax(numbers, 55));
