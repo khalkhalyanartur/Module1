@@ -25,8 +25,8 @@ const triangles =  [
   }
 ]
 
-const countPermeterTriangle = (array) => {
+const calcPermeterTriangle = (array) => {
   return array.map((item) => ({ p: item.a + item.b + item.c }));
 }
 
-console.log(countPermeterTriangle(triangles))
+console.log(calcPermeterTriangle(triangles));
