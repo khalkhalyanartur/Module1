@@ -22,7 +22,7 @@ const users =  [
   }
 ]
 
-const nameArrayOlder = function (array, age = 18) {
+const giveNameOlder = (array, age = 18) => {
   const result = [];
 
     array.forEach(element => {
@@ -34,5 +34,4 @@ const nameArrayOlder = function (array, age = 18) {
     return result;
 }
 
-console.log(nameArrayOlder(users));
-
+console.log(giveNameOlder(users));
