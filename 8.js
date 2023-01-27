@@ -25,6 +25,7 @@ const sumAge = (array) => {
   array.forEach(element => {
     total = total + element.age;
   });
+  
   return total;
 }
 
