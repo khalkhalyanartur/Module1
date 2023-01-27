@@ -6,18 +6,36 @@ Input: [{ from: ‘Ivan’, to: ‘Oleg’, amount: 2500}, { from: ‘Ivan’, t
 Output: 2000, [{ from: ‘Ivan’, to: ‘Oleg’, amount: 2500, diff: 500}, { from: ‘Ivan’, to: ‘Igor’, amount: 2000, diff: 0}, { from: ‘Oleg’, to: ‘Igor’, amount: 1500, diff: -500}]
 */
 
-const cashflow = [{ from: "Ivan", to: "Oleg", amount: 2500}, { from: "Ivan", to: "Igor", amount: 2000}, { from: "Oleg", to: "Igor", amount: 1500}];
+const cashflow = [
+  { 
+    from: "Ivan",
+    to: "Oleg",
+    amount: 2500
+  }, { 
+    from: "Ivan",
+    to: "Igor",
+    amount: 2000
+  }, {
+    from: "Oleg",
+    to: "Igor",
+    amount: 1500
+  }
+];
+
 let avrCashflow = 0;
 
-const avrCalculation = function(array) {
+const calcAverage = (array) => {
   let sum = 0;
+
   array.forEach(element => {
     sum = sum + element.amount; 
   });
+
   return sum/array.length
 }
 
-const addDiff = function(array, avr) {
+const addDiff = (array, avr) => {
+  
   return array.map((item) => (
     {
     from : item.from ,
@@ -28,6 +46,6 @@ const addDiff = function(array, avr) {
 
 }
 
-avrCashflow = avrCalculation(cashflow);
+avrCashflow = calcAverage(cashflow);
 console.log(avrCashflow, addDiff(cashflow, avrCashflow));
 
