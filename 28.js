@@ -11,7 +11,6 @@ const user = {
 const changed = { age: 15, password: ‘new password }
 Написать функцию, принимающую на вход исходный объект и объект с измененными параметрами и возвращающая обновленный исходный объект. 
 (В объекте и changed могут быть любые поля из user в любом количестве). Для приведённого выше примера результат должен быть следующий:
-
 {
  id: 123,
  first_name: ‘Ivan’,
@@ -21,8 +20,8 @@ const changed = { age: 15, password: ‘new password }
 }
 */
 
-const mergObject = (obj1,obj2) => {
-  return Object.assign(obj1, obj2)
+const mergObject = (obj1, obj2) => {
+  return Object.assign(obj1, obj2);
 }
 
 const user = {
